@@ -12,20 +12,19 @@
 
     public class Player
     {
+        private string _name;
+        private int _health;
+
         public Player(string name, int health)
         {
-            Name = name;
-            Health = health;
+            _name = name;
+            _health = health;
         }
-
-        public string Name { get; }
-
-        public int Health { get; private set; }
 
         public void ShowInfo()
         {
-            Console.WriteLine($"Имя: {Name}");
-            Console.WriteLine($"Здоровье: {Health}");
+            Console.WriteLine($"Имя: {_name}");
+            Console.WriteLine($"Здоровье: {_health}");
         }
     }
 }
